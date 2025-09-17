@@ -105,7 +105,7 @@ To change a target implementation, use `-t` option.
 Currently, `bgperf2` supports [BIRD](http://bird.network.cz/) and [FRRouting](https://frrouting.org/)
 (other than GoBGP. There is very intial support for[RustyBGP](https://github.com/osrg/rustybgp), partly
 because RustyBGP doesn't support all policy that Bgperf2 tries to use for policy testing. If you just want to
-do routes and neighbors then RustyBGP works.
+do routes and neighbors then RustyBGP works. Also there is some support for [freeRtr](http://freertr.org/)
 
 ```bash
 $ python3 bgperf2.py bench -t bird
