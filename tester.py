@@ -81,7 +81,6 @@ protocol bgp {{
     #hold time 5;
     source address {3};
     connect delay time 1;
-    interface "eth0";
     strict bind;
     ipv4 {{ import none; export all; }};
     local {3} as {4};

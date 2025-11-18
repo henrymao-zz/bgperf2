@@ -216,6 +216,7 @@ def bench(args):
     output_stats = {}
     config_dir = '{0}/{1}'.format(args.dir, args.bench_name)
     dckr_net_name = args.docker_network_name or args.bench_name + '-br'
+    target_class = BIRDTarget
     
     remove_target_containers()
 
