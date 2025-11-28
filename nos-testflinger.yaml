@@ -7,913 +7,913 @@
     def gen_paths(num):
         return list('{0}/32'.format(ip) for ip in islice(it, num))
 %>
-local_prefix: 10.10.0.0/16
+local_prefix: 10.241.72.0/21
 monitor:
   as: 1001
   check-points: [400000]
-  local-address: 10.10.0.2
-  router-id: 10.10.0.2
-target: {as: 1000, local-address: 10.10.0.254, router-id: 10.10.0.254, remote: true}
+  local-address: 10.241.72.254
+  router-id: 10.241.72.254
+target: {as: 1000, local-address: 10.242.24.50, router-id: 10.242.24.50, remote: true}
 testers:
 - name: tester
   neighbors:
-    10.10.0.10:
+    10.241.72.10:
       as: 1010
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.10
+      local-address: 10.241.72.10
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.10
-    10.10.0.100:
+      router-id: 10.241.72.10
+    10.241.72.100:
       as: 1100
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.100
+      local-address: 10.241.72.100
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.100
-    10.10.0.101:
+      router-id: 10.241.72.100
+    10.241.72.101:
       as: 1101
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.101
+      local-address: 10.241.72.101
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.101
-    10.10.0.102:
+      router-id: 10.241.72.101
+    10.241.72.102:
       as: 1102
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.102
+      local-address: 10.241.72.102
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.102
-    10.10.0.11:
+      router-id: 10.241.72.102
+    10.241.72.11:
       as: 1011
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.11
+      local-address: 10.241.72.11
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.11
-    10.10.0.12:
+      router-id: 10.241.72.11
+    10.241.72.12:
       as: 1012
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.12
+      local-address: 10.241.72.12
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.12
-    10.10.0.13:
+      router-id: 10.241.72.12
+    10.241.72.13:
       as: 1013
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.13
+      local-address: 10.241.72.13
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.13
-    10.10.0.14:
+      router-id: 10.241.72.13
+    10.241.72.14:
       as: 1014
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.14
+      local-address: 10.241.72.14
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.14
-    10.10.0.15:
+      router-id: 10.241.72.14
+    10.241.72.15:
       as: 1015
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.15
+      local-address: 10.241.72.15
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.15
-    10.10.0.16:
+      router-id: 10.241.72.15
+    10.241.72.16:
       as: 1016
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.16
+      local-address: 10.241.72.16
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.16
-    10.10.0.17:
+      router-id: 10.241.72.16
+    10.241.72.17:
       as: 1017
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.17
+      local-address: 10.241.72.17
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.17
-    10.10.0.18:
+      router-id: 10.241.72.17
+    10.241.72.18:
       as: 1018
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.18
+      local-address: 10.241.72.18
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.18
-    10.10.0.19:
+      router-id: 10.241.72.18
+    10.241.72.19:
       as: 1019
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.19
+      local-address: 10.241.72.19
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.19
-    10.10.0.20:
+      router-id: 10.241.72.19
+    10.241.72.20:
       as: 1020
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.20
+      local-address: 10.241.72.20
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.20
-    10.10.0.21:
+      router-id: 10.241.72.20
+    10.241.72.21:
       as: 1021
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.21
+      local-address: 10.241.72.21
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.21
-    10.10.0.22:
+      router-id: 10.241.72.21
+    10.241.72.22:
       as: 1022
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.22
+      local-address: 10.241.72.22
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.22
-    10.10.0.23:
+      router-id: 10.241.72.22
+    10.241.72.23:
       as: 1023
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.23
+      local-address: 10.241.72.23
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.23
-    10.10.0.24:
+      router-id: 10.241.72.23
+    10.241.72.24:
       as: 1024
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.24
+      local-address: 10.241.72.24
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.24
-    10.10.0.25:
+      router-id: 10.241.72.24
+    10.241.72.25:
       as: 1025
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.25
+      local-address: 10.241.72.25
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.25
-    10.10.0.26:
+      router-id: 10.241.72.25
+    10.241.72.26:
       as: 1026
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.26
+      local-address: 10.241.72.26
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.26
-    10.10.0.27:
+      router-id: 10.241.72.26
+    10.241.72.27:
       as: 1027
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.27
+      local-address: 10.241.72.27
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.27
-    10.10.0.28:
+      router-id: 10.241.72.27
+    10.241.72.28:
       as: 1028
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.28
+      local-address: 10.241.72.28
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.28
-    10.10.0.29:
+      router-id: 10.241.72.28
+    10.241.72.29:
       as: 1029
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.29
+      local-address: 10.241.72.29
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.29
-    10.10.0.3:
+      router-id: 10.241.72.29
+    10.241.72.3:
       as: 1003
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.3
+      local-address: 10.241.72.3
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.3
-    10.10.0.30:
+      router-id: 10.241.72.3
+    10.241.72.30:
       as: 1030
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.30
+      local-address: 10.241.72.30
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.30
-    10.10.0.31:
+      router-id: 10.241.72.30
+    10.241.72.31:
       as: 1031
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.31
+      local-address: 10.241.72.31
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.31
-    10.10.0.32:
+      router-id: 10.241.72.31
+    10.241.72.32:
       as: 1032
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.32
+      local-address: 10.241.72.32
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.32
-    10.10.0.33:
+      router-id: 10.241.72.32
+    10.241.72.33:
       as: 1033
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.33
+      local-address: 10.241.72.33
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.33
-    10.10.0.34:
+      router-id: 10.241.72.33
+    10.241.72.34:
       as: 1034
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.34
+      local-address: 10.241.72.34
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.34
-    10.10.0.35:
+      router-id: 10.241.72.34
+    10.241.72.35:
       as: 1035
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.35
+      local-address: 10.241.72.35
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.35
-    10.10.0.36:
+      router-id: 10.241.72.35
+    10.241.72.36:
       as: 1036
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.36
+      local-address: 10.241.72.36
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.36
-    10.10.0.37:
+      router-id: 10.241.72.36
+    10.241.72.37:
       as: 1037
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.37
+      local-address: 10.241.72.37
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.37
-    10.10.0.38:
+      router-id: 10.241.72.37
+    10.241.72.38:
       as: 1038
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.38
+      local-address: 10.241.72.38
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.38
-    10.10.0.39:
+      router-id: 10.241.72.38
+    10.241.72.39:
       as: 1039
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.39
+      local-address: 10.241.72.39
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.39
-    10.10.0.4:
+      router-id: 10.241.72.39
+    10.241.72.4:
       as: 1004
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.4
+      local-address: 10.241.72.4
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.4
-    10.10.0.40:
+      router-id: 10.241.72.4
+    10.241.72.40:
       as: 10400
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.40
+      local-address: 10.241.72.40
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.40
-    10.10.0.41:
+      router-id: 10.241.72.40
+    10.241.72.41:
       as: 1041
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.41
+      local-address: 10.241.72.41
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.41
-    10.10.0.42:
+      router-id: 10.241.72.41
+    10.241.72.42:
       as: 1042
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.42
+      local-address: 10.241.72.42
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.42
-    10.10.0.43:
+      router-id: 10.241.72.42
+    10.241.72.43:
       as: 1043
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.43
+      local-address: 10.241.72.43
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.43
-    10.10.0.44:
+      router-id: 10.241.72.43
+    10.241.72.44:
       as: 1044
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.44
+      local-address: 10.241.72.44
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.44
-    10.10.0.45:
+      router-id: 10.241.72.44
+    10.241.72.45:
       as: 1045
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.45
+      local-address: 10.241.72.45
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.45
-    10.10.0.46:
+      router-id: 10.241.72.45
+    10.241.72.46:
       as: 1046
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.46
+      local-address: 10.241.72.46
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.46
-    10.10.0.47:
+      router-id: 10.241.72.46
+    10.241.72.47:
       as: 1047
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.47
+      local-address: 10.241.72.47
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.47
-    10.10.0.48:
+      router-id: 10.241.72.47
+    10.241.72.48:
       as: 1048
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.48
+      local-address: 10.241.72.48
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.48
-    10.10.0.49:
+      router-id: 10.241.72.48
+    10.241.72.49:
       as: 1049
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.49
+      local-address: 10.241.72.49
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.49
-    10.10.0.5:
+      router-id: 10.241.72.49
+    10.241.72.5:
       as: 1005
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.5
+      local-address: 10.241.72.5
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.5
-    10.10.0.50:
+      router-id: 10.241.72.5
+    10.241.72.50:
       as: 1050
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.50
+      local-address: 10.241.72.50
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.50
-    10.10.0.51:
+      router-id: 10.241.72.50
+    10.241.72.51:
       as: 1051
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.51
+      local-address: 10.241.72.51
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.51
-    10.10.0.52:
+      router-id: 10.241.72.51
+    10.241.72.52:
       as: 1052
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.52
+      local-address: 10.241.72.52
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.52
-    10.10.0.53:
+      router-id: 10.241.72.52
+    10.241.72.53:
       as: 1053
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.53
+      local-address: 10.241.72.53
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.53
-    10.10.0.54:
+      router-id: 10.241.72.53
+    10.241.72.54:
       as: 1054
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.54
+      local-address: 10.241.72.54
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.54
-    10.10.0.55:
+      router-id: 10.241.72.54
+    10.241.72.55:
       as: 1055
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.55
+      local-address: 10.241.72.55
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.55
-    10.10.0.56:
+      router-id: 10.241.72.55
+    10.241.72.56:
       as: 1056
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.56
+      local-address: 10.241.72.56
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.56
-    10.10.0.57:
+      router-id: 10.241.72.56
+    10.241.72.57:
       as: 1057
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.57
+      local-address: 10.241.72.57
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.57
-    10.10.0.58:
+      router-id: 10.241.72.57
+    10.241.72.58:
       as: 1058
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.58
+      local-address: 10.241.72.58
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.58
-    10.10.0.59:
+      router-id: 10.241.72.58
+    10.241.72.59:
       as: 1059
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.59
+      local-address: 10.241.72.59
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.59
-    10.10.0.6:
+      router-id: 10.241.72.59
+    10.241.72.6:
       as: 1006
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.6
+      local-address: 10.241.72.6
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.6
-    10.10.0.60:
+      router-id: 10.241.72.6
+    10.241.72.60:
       as: 1060
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.60
+      local-address: 10.241.72.60
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.60
-    10.10.0.61:
+      router-id: 10.241.72.60
+    10.241.72.61:
       as: 1061
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.61
+      local-address: 10.241.72.61
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.61
-    10.10.0.62:
+      router-id: 10.241.72.61
+    10.241.72.62:
       as: 1062
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.62
+      local-address: 10.241.72.62
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.62
-    10.10.0.63:
+      router-id: 10.241.72.62
+    10.241.72.63:
       as: 1063
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.63
+      local-address: 10.241.72.63
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.63
-    10.10.0.64:
+      router-id: 10.241.72.63
+    10.241.72.64:
       as: 1064
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.64
+      local-address: 10.241.72.64
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.64
-    10.10.0.65:
+      router-id: 10.241.72.64
+    10.241.72.65:
       as: 1065
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.65
+      local-address: 10.241.72.65
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.65
-    10.10.0.66:
+      router-id: 10.241.72.65
+    10.241.72.66:
       as: 1066
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.66
+      local-address: 10.241.72.66
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.66
-    10.10.0.67:
+      router-id: 10.241.72.66
+    10.241.72.67:
       as: 1067
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.67
+      local-address: 10.241.72.67
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.67
-    10.10.0.68:
+      router-id: 10.241.72.67
+    10.241.72.68:
       as: 1068
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.68
+      local-address: 10.241.72.68
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.68
-    10.10.0.69:
+      router-id: 10.241.72.68
+    10.241.72.69:
       as: 1069
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.69
+      local-address: 10.241.72.69
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.69
-    10.10.0.7:
+      router-id: 10.241.72.69
+    10.241.72.7:
       as: 1007
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.7
+      local-address: 10.241.72.7
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.7
-    10.10.0.70:
+      router-id: 10.241.72.7
+    10.241.72.70:
       as: 1070
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.70
+      local-address: 10.241.72.70
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.70
-    10.10.0.71:
+      router-id: 10.241.72.70
+    10.241.72.71:
       as: 1071
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.71
+      local-address: 10.241.72.71
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.71
-    10.10.0.72:
+      router-id: 10.241.72.71
+    10.241.72.72:
       as: 1072
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.72
+      local-address: 10.241.72.72
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.72
-    10.10.0.73:
+      router-id: 10.241.72.72
+    10.241.72.73:
       as: 1073
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.73
+      local-address: 10.241.72.73
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.73
-    10.10.0.74:
+      router-id: 10.241.72.73
+    10.241.72.74:
       as: 1074
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.74
+      local-address: 10.241.72.74
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.74
-    10.10.0.75:
+      router-id: 10.241.72.74
+    10.241.72.75:
       as: 1075
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.75
+      local-address: 10.241.72.75
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.75
-    10.10.0.76:
+      router-id: 10.241.72.75
+    10.241.72.76:
       as: 1076
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.76
+      local-address: 10.241.72.76
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.76
-    10.10.0.77:
+      router-id: 10.241.72.76
+    10.241.72.77:
       as: 1077
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.77
+      local-address: 10.241.72.77
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.77
-    10.10.0.78:
+      router-id: 10.241.72.77
+    10.241.72.78:
       as: 1078
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.78
+      local-address: 10.241.72.78
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.78
-    10.10.0.79:
+      router-id: 10.241.72.78
+    10.241.72.79:
       as: 1079
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.79
+      local-address: 10.241.72.79
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.79
-    10.10.0.8:
+      router-id: 10.241.72.79
+    10.241.72.8:
       as: 1008
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.8
+      local-address: 10.241.72.8
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.8
-    10.10.0.80:
+      router-id: 10.241.72.8
+    10.241.72.80:
       as: 1080
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.80
+      local-address: 10.241.72.80
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.80
-    10.10.0.81:
+      router-id: 10.241.72.80
+    10.241.72.81:
       as: 1081
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.81
+      local-address: 10.241.72.81
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.81
-    10.10.0.82:
+      router-id: 10.241.72.81
+    10.241.72.82:
       as: 1082
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.82
+      local-address: 10.241.72.82
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.82
-    10.10.0.83:
+      router-id: 10.241.72.82
+    10.241.72.83:
       as: 1083
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.83
+      local-address: 10.241.72.83
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.83
-    10.10.0.84:
+      router-id: 10.241.72.83
+    10.241.72.84:
       as: 1084
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.84
+      local-address: 10.241.72.84
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.84
-    10.10.0.85:
+      router-id: 10.241.72.84
+    10.241.72.85:
       as: 1085
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.85
+      local-address: 10.241.72.85
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.85
-    10.10.0.86:
+      router-id: 10.241.72.85
+    10.241.72.86:
       as: 1086
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.86
+      local-address: 10.241.72.86
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.86
-    10.10.0.87:
+      router-id: 10.241.72.86
+    10.241.72.87:
       as: 1087
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.87
+      local-address: 10.241.72.87
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.87
-    10.10.0.88:
+      router-id: 10.241.72.87
+    10.241.72.88:
       as: 1088
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.88
+      local-address: 10.241.72.88
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.88
-    10.10.0.89:
+      router-id: 10.241.72.88
+    10.241.72.89:
       as: 1089
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.89
+      local-address: 10.241.72.89
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.89
-    10.10.0.9:
+      router-id: 10.241.72.89
+    10.241.72.9:
       as: 1009
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.9
+      local-address: 10.241.72.9
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.9
-    10.10.0.90:
+      router-id: 10.241.72.9
+    10.241.72.90:
       as: 1090
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.90
+      local-address: 10.241.72.90
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.90
-    10.10.0.91:
+      router-id: 10.241.72.90
+    10.241.72.91:
       as: 1091
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.91
+      local-address: 10.241.72.91
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.91
-    10.10.0.92:
+      router-id: 10.241.72.91
+    10.241.72.92:
       as: 1092
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.92
+      local-address: 10.241.72.92
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.92
-    10.10.0.93:
+      router-id: 10.241.72.92
+    10.241.72.93:
       as: 1093
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.93
+      local-address: 10.241.72.93
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.93
-    10.10.0.94:
+      router-id: 10.241.72.93
+    10.241.72.94:
       as: 1094
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.94
+      local-address: 10.241.72.94
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.94
-    10.10.0.95:
+      router-id: 10.241.72.94
+    10.241.72.95:
       as: 1095
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.95
+      local-address: 10.241.72.95
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.95
-    10.10.0.96:
+      router-id: 10.241.72.95
+    10.241.72.96:
       as: 1096
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.96
+      local-address: 10.241.72.96
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.96
-    10.10.0.97:
+      router-id: 10.241.72.96
+    10.241.72.97:
       as: 1097
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.97
+      local-address: 10.241.72.97
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.97
-    10.10.0.98:
+      router-id: 10.241.72.97
+    10.241.72.98:
       as: 1098
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.98
+      local-address: 10.241.72.98
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.98
-    10.10.0.99:
+      router-id: 10.241.72.98
+    10.241.72.99:
       as: 1099
       check-points: 400
       count: 400
       filter:
         in: []
-      local-address: 10.10.0.99
+      local-address: 10.241.72.99
       paths: ${gen_paths(400)}
-      router-id: 10.10.0.99
+      router-id: 10.241.72.99

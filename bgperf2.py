@@ -643,7 +643,7 @@ def bench(args):
             output_stats['tester_errors'] = tester_class.find_errors()
             output_stats['tester_timeouts'] = tester_class.find_timeouts() 
             print("FAILED")
-            o_s = finish_bench(args, output_stats,bench_stats, bench_start,target, m, fail=True)  
+            o_s = finish_bench(args, output_stats,bench_stats, bench_start, target_class, m, fail=True)  
             return o_s
 
 

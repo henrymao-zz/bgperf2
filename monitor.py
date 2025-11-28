@@ -42,7 +42,9 @@ class Monitor(GoBGP):
         config ['neighbors'] = [{'config': {'neighbor-address': conf['target']['local-address'],
                                             'peer-as': conf['target']['as']},
                                  'transport': {'config': {'local-address': conf['monitor']['local-address']}},
-                                 'timers': {'config': {'connect-retry': 10}}}]
+                                 'timers': {'config': {'connect-retry': 10}},
+                                 'ebgp-multihop':  {'config': {'enabled': 'true', 'multihop-ttl':32}}}]
+
         with open('{0}/{1}'.format(self.host_dir, 'gobgpd.conf'), 'w') as f:
             f.write(yaml.dump(config))
         self.config_name = 'gobgpd.conf'
