@@ -79,6 +79,7 @@ router id {2};
 protocol device {{}}
 protocol bgp {{
     #hold time 5;
+    multihop;
     source address {3};
     connect delay time 1;
     strict bind;
